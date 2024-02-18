@@ -78,7 +78,7 @@ Follow these steps to get your development environment up and running:
    CLIENT_ID=your_client_id_here
    DB_URI=your_mongodb_uri_here
    
-8. **Start the Bot
+8. **Start the Bot**
    ```bash
    yarn dev
 
