@@ -52,5 +52,5 @@ Follow these steps to get your development environment up and running:
 
 1. **Install Dependencies**
    ```bash
-   npm install
-  ```
+   yarn install ```
+
