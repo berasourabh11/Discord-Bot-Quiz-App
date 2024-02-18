@@ -52,5 +52,10 @@ Follow these steps to get your development environment up and running:
 
 1. **Install Dependencies**
    ```bash
-   yarn install ```
-
+   yarn install
+   
+2. **Create a Discord Server**
+   If you haven't already, create a Discord server where you intend to run the bot. Enable Developer Mode in your Discord settings to access IDs and tokens needed for bot setup
+   
+4. **Register Your Bot with Discord**
+   Go to the Discord Developer Portal, create a new application, and add a bot to it. Note down the BOT TOKEN and CLIENT ID.
