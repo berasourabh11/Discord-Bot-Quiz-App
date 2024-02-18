@@ -86,8 +86,18 @@ Follow these steps to get your development environment up and running:
    ```bash
    node commands.js
 
+10 ***Optional (Enable admin commands)***
+
+1. Create a role named admin
+2. Create a text channel named admins
+3. Assign roles to users you want to make admin.
+4. go the the ceated channel and type in "get channel id"
+5. take in the channel id and paste it in the .env file with ADMIN_CHANNEL_ID={obtained ID}
+
 10. **Start the Bot**
     ```bash
       yarn dev
+
+
 
 This markdown includes the complete setup instructions and features for the Quizzify Discord bot, formatted as a single, cohesive document.

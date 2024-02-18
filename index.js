@@ -32,8 +32,15 @@ client.on("ready", async () => {
 // admin actions
 const type=["!edit","!add","!remove","!view"];
 client.on("messageCreate", async (message) => {
-  if(message.channelId == "1208652273224388671" && type.includes(message.content)){
-    const channel=client.channels.cache.get("1208652273224388671");
+
+  // TODO:remove these three following lines once you have the admin channel id
+  if(message.content ==="get channel id"){
+   console.log(message.channelId);
+  }
+
+
+  if(message.channelId == process.env.ADMIN_CHANNEL_ID && type.includes(message.content)){
+    const channel=client.channels.cache.get(process.env.ADMIN_CHANNEL_ID);
     const userId=message.author.id;
     adminActions(message.content,channel,userId);
   }
