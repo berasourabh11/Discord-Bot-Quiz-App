@@ -60,7 +60,7 @@ Follow these steps to get your development environment up and running:
    
 4. **Register Your Bot with Discord**
    
-   Go to the Discord Developer Portal, create a new application, and add a bot to it. Note down the BOT TOKEN and CLIENT ID.
+   Go to the Discord Developer Portal, create a new application, and add a bot to it. Note down the BOT TOKEN and CLIENT ID Also enable MESSAGE CONTENT INTENT.
 
 5. **Add Your Bot to Your Server**
 
