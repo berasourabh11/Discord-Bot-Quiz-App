@@ -3,16 +3,10 @@ import dotenv from 'dotenv';
 dotenv.config();
 const commands = [
   {
-    name: 'ping',
-    description: 'Replies with Pong!',
-  },
-  {
+    name: "ping",
+    description: "Replies with Pong!",
     name: "quiz",
     description: "Initiates a quiz game!",
-  },
-  {
-    name: "leaderboard",
-    description: "Displays the leaderboard",
   },
 ];
 

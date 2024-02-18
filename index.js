@@ -8,7 +8,6 @@ import { initialQuizMessagePart1, initialQuizMessagePart2 } from "./data/quizmes
 import Leaderboard from "./db/models/leaderboard.js";
 import adminActions from "./services/adminActions.js";
 
-// Load environment variables from the .env file.
 dotenv.config();
 
 // Create a new Discord client with specific intents to listen to guilds, messages, message content, and reactions.
@@ -30,7 +29,7 @@ client.on("ready", async () => {
   console.log(`Logged in as ${client.user.tag}!`); // Log the bot's tag to the console.
 });
 
-
+// admin actions
 const type=["!edit","!add","!remove","!view"];
 client.on("messageCreate", async (message) => {
   if(message.channelId == "1208652273224388671" && type.includes(message.content)){
@@ -69,16 +68,16 @@ client.on("interactionCreate", async (interaction) => {
   if (commandName === 'quiz') {
     // Handle the quiz command, create a dedicated channel for the quiz, and start the quiz.
     const channel = await handleQuizCommand(interaction);
-    channel.send(initialQuizMessagePart1); // Send the first part of the quiz introduction message.
-    channel.send(initialQuizMessagePart2); // Send the second part of the quiz introduction message.
-    await conductQuiz(channel); // Conduct the quiz in the newly created channel.
+    channel.send(initialQuizMessagePart1);
+    channel.send(initialQuizMessagePart2);
+    await conductQuiz(channel);
   }
 });
 
 // Function to handle the quiz command: creates a private text channel for the quiz.
 async function handleQuizCommand(interaction) {
-  const guild = interaction.guild; // Get the guild (server) where the interaction was made.
-  const member = interaction.member; // Get the member who initiated the interaction.
+  const guild = interaction.guild;
+  const member = interaction.member;
 
   try {
     // Create a new private text channel named after the user with specific permissions.
