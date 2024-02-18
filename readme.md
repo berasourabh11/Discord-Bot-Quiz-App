@@ -42,7 +42,7 @@ These instructions will guide you through setting up Quizzify on your local mach
 ### Prerequisites
 
 - Node.js (Latest Stable Version)
-- npm (comes with Node.js)
+- yarn (package manager)
 - MongoDB (for storing questions, user scores, and configurations)
 - A Discord account and a server for testing the bot
 
@@ -55,7 +55,32 @@ Follow these steps to get your development environment up and running:
    yarn install
    
 2. **Create a Discord Server**
+   
    If you haven't already, create a Discord server where you intend to run the bot. Enable Developer Mode in your Discord settings to access IDs and tokens needed for bot setup
    
 4. **Register Your Bot with Discord**
+   
    Go to the Discord Developer Portal, create a new application, and add a bot to it. Note down the BOT TOKEN and CLIENT ID.
+
+5. **Add Your Bot to Your Server**
+
+   Use the OAuth2 URL Generator in the Discord Developer Portal to generate an invite link with the necessary permissions and add your bot to your server.
+
+6. **Set Up MongoDB Database**
+
+   Create a MongoDB Atlas account or a local MongoDB server. Create a new database for your bot and note down the MongoDB URI.
+
+7. **Configure Environment Variables**
+
+   Create a .env file in the root directory of your project and fill it with your bot token, client ID, and database URI:
+   ```
+   BOT_TOKEN=your_discord_bot_token_here
+   CLIENT_ID=your_client_id_here
+   DB_URI=your_mongodb_uri_here
+   
+8. **Start the Bot
+   ```bash
+   yarn dev
+
+
+This markdown includes the complete setup instructions and features for the Quizzify Discord bot, formatted as a single, cohesive document.
