@@ -72,15 +72,22 @@ Follow these steps to get your development environment up and running:
 
 7. **Configure Environment Variables**
 
-   Create a .env file in the root directory of your project and fill it with your bot token, client ID, and database URI:
+   Create a .env file in the root directory of your project and fill it with your bot token, client ID, and database URI and then rename the file to .env:
    ```
    BOT_TOKEN=your_discord_bot_token_here
    CLIENT_ID=your_client_id_here
    DB_URI=your_mongodb_uri_here
-   
-8. **Start the Bot**
+
+8. ***Populate the Database***
+   ```bash
+   node seed.js
+
+9. ***Register Bot Commands***
+   ```bash
+   node commands.js
+
+10. **Start the Bot**
    ```bash
    yarn dev
-
 
 This markdown includes the complete setup instructions and features for the Quizzify Discord bot, formatted as a single, cohesive document.
