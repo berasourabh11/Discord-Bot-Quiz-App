@@ -12,6 +12,7 @@ const hardProblemsSchema = new mongoose.Schema({
   description:{
     type: String,
     required: true,
+    default: "Type your answer as a message. Make sure you spell your answer correctly",
   },
   answer: {
     type: String,
