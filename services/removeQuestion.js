@@ -30,9 +30,7 @@ const removeQuestion = async (type, channel, userId) => {
   };
 
   try {
-    console.log(type)
     const idToDelete = await askForId("Enter the ID of the question to remove:");
-    console.log(idToDelete);
     if (idToDelete === "cancel" || idToDelete === "timeout") return;
 
     switch (type) {
