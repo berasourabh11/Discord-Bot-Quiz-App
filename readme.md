@@ -87,7 +87,7 @@ Follow these steps to get your development environment up and running:
    node commands.js
 
 10. **Start the Bot**
-   ```bash
-   yarn dev
+    ```bash
+      yarn dev
 
 This markdown includes the complete setup instructions and features for the Quizzify Discord bot, formatted as a single, cohesive document.
